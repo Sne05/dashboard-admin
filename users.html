@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h2>Dash<span>Board</span></h2>
+        </div>
+
+        <div class="sidebar-menu">
+
+            <p class="menu-heading">MAIN MENU</p>
+
+            <a href="index.html" class="menu-link">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="users.html" class="menu-link active">
+                <i class="fa-solid fa-users"></i>
+                <span>Users</span>
+            </a>
+
+            <a href="orders.html" class="menu-link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Orders</span>
+            </a>
+
+            <a href="products.html" class="menu-link">
+                <i class="fa-solid fa-box"></i>
+                <span>Products</span>
+            </a>
+
+            <a href="analytics.html" class="menu-link">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+
+            <p class="menu-heading second-heading">PREFERENCES</p>
+
+            <a href="messages.html" class="menu-link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Messages</span>
+                <span class="notification-count">4</span>
+            </a>
+
+            <a href="settings.html" class="menu-link">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-bottom">
+
+            <div class="help-card">
+                <div class="help-icon">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <h3>Need Help?</h3>
+                <p>Contact our support team for assistance.</p>
+                <a href="support.html">Get Support</a>
+            </div>
+
+            <a href="login.html" class="logout-link">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="top-header">
+
+            <div class="header-left">
+                <div>
+                    <h1>Users</h1>
+                    <p>Manage and monitor your registered users.</p>
+                </div>
+            </div>
+
+            <div class="header-right">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search anything...">
+                </div>
+
+                <a href="#" class="header-icon notification-icon">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </a>
+
+                <div class="header-profile">
+                    <img src="https://i.pravatar.cc/100?img=47" alt="Admin profile">
+                    <div>
+                        <h4>Alex Morgan</h4>
+                        <p>Administrator</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE INTRO -->
+        <section class="page-intro">
+            <div>
+                <span class="welcome-label">USER MANAGEMENT</span>
+                <h2>All Users</h2>
+                <p>View, organize and manage your customers from one place.</p>
+            </div>
+
+            <a href="#" class="primary-button">
+                <i class="fa-solid fa-plus"></i>
+                Add New User
+            </a>
+        </section>
+
+
+        <!-- USER STATISTICS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon blue">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <span class="stat-change positive">+12.5%</span>
+                </div>
+                <p>Total Users</p>
+                <h2>24,560</h2>
+                <span class="stat-description">Compared to last month</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon green">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <span class="stat-change positive">+8.4%</span>
+                </div>
+                <p>Active Users</p>
+                <h2>18,250</h2>
+                <span class="stat-description">Currently active accounts</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon purple">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <span class="stat-change positive">+15.2%</span>
+                </div>
+                <p>New Users</p>
+                <h2>1,240</h2>
+                <span class="stat-description">Registered this month</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon orange">
+                        <i class="fa-solid fa-user-clock"></i>
+                    </div>
+                    <span class="stat-change negative">-2.4%</span>
+                </div>
+                <p>Inactive Users</p>
+                <h2>6,310</h2>
+                <span class="stat-description">Inactive accounts</span>
+            </div>
+
+        </section>
+
+
+        <!-- USERS TABLE -->
+        <section class="page-table-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>All Registered Users</h2>
+                    <p>A list of all users registered on your platform.</p>
+                </div>
+
+                <button class="outline-button">
+                    <i class="fa-solid fa-download"></i>
+                    Export
+                </button>
+            </div>
+
+
+            <!-- TABLE TOOLBAR -->
+            <div class="table-toolbar">
+
+                <div class="table-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search users...">
+                </div>
+
+                <select class="table-select">
+                    <option>All Status</option>
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+
+                <select class="table-select">
+                    <option>All Roles</option>
+                    <option>Admin</option>
+                    <option>Customer</option>
+                </select>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table class="management-table">
+
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>User ID</th>
+                            <th>Role</th>
+                            <th>Joined Date</th>
+                            <th>Orders</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=12" alt="">
+                                    <div>
+                                        <strong>Olivia Martin</strong>
+                                        <small>olivia@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>#USR-1001</td>
+                            <td>Customer</td>
+                            <td>Jan 12, 2026</td>
+                            <td>32</td>
+                            <td><span class="status completed">Active</span></td>
+                            <td><a href="profile.html" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=11" alt="">
+                                    <div>
+                                        <strong>James Wilson</strong>
+                                        <small>james@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>#USR-1002</td>
+                            <td>Customer</td>
+                            <td>Feb 05, 2026</td>
+                            <td>28</td>
+                            <td><span class="status completed">Active</span></td>
+                            <td><a href="profile.html" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=32" alt="">
+                                    <div>
+                                        <strong>Sophia Anderson</strong>
+                                        <small>sophia@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>#USR-1003</td>
+                            <td>Customer</td>
+                            <td>Mar 18, 2026</td>
+                            <td>24</td>
+                            <td><span class="status completed">Active</span></td>
+                            <td><a href="profile.html" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=5" alt="">
+                                    <div>
+                                        <strong>William Brown</strong>
+                                        <small>william@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>#USR-1004</td>
+                            <td>Customer</td>
+                            <td>Apr 22, 2026</td>
+                            <td>19</td>
+                            <td><span class="status pending">Inactive</span></td>
+                            <td><a href="profile.html" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=44" alt="">
+                                    <div>
+                                        <strong>Emma Davis</strong>
+                                        <small>emma@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>#USR-1005</td>
+                            <td>Admin</td>
+                            <td>May 10, 2026</td>
+                            <td>15</td>
+                            <td><span class="status completed">Active</span></td>
+                            <td><a href="profile.html" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=60" alt="">
+                                    <div>
+                                        <strong>Noah Taylor</strong>
+                                        <small>noah@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>#USR-1006</td>
+                            <td>Customer</td>
+                            <td>Jun 14, 2026</td>
+                            <td>10</td>
+                            <td><span class="status pending">Inactive</span></td>
+                            <td><a href="profile.html" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+
+                <p>Showing 1–6 of 24,560 users</p>
+
+                <div class="pagination-buttons">
+                    <button disabled><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="page-active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="dashboard-footer">
+            <p>© 2026 DashBoard Admin Panel. All Rights Reserved.</p>
+            <p>Designed with <i class="fa-solid fa-heart"></i> for better management.</p>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>

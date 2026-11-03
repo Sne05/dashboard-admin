@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | DashBoard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><span class="logo-icon"><i class="fa-solid fa-chart-pie"></i></span> DashBoard</div>
+    <nav class="sidebar-menu">
+      <p class="menu-heading">MENU</p>
+      <a href="index.html" class="menu-link"><i class="fa-solid fa-house"></i> Dashboard</a>
+      <a href="users.html" class="menu-link"><i class="fa-solid fa-users"></i> Users</a>
+      <a href="orders.html" class="menu-link"><i class="fa-solid fa-cart-shopping"></i> Orders</a>
+      <a href="products.html" class="menu-link"><i class="fa-solid fa-box"></i> Products</a>
+      <a href="analytics.html" class="menu-link"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+      <a href="messages.html" class="menu-link"><i class="fa-regular fa-envelope"></i> Messages</a>
+      <p class="menu-heading">PREFERENCES</p><a href="settings.html" class="menu-link active"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><div class="help-icon"><i class="fa-regular fa-circle-question"></i></div><strong>Need Help?</strong><p>Contact our support team.</p><a href="support.html">Get Support</a></div>
+      <a href="login.html" class="menu-link logout-link"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </div>
+  </aside>
+  <main class="main-content">
+
+            <!-- DASHBOARD HEADER -->
+            <header class="top-header">
+
+                <div class="header-left">
+                    <div>
+                        <h1>Settings</h1>
+                        <p>Welcome back! Here's what's happening today.</p>
+                    </div>
+                </div>
+
+                <div class="header-right">
+
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search anything...">
+                    </div>
+
+                    <a href="#" class="header-icon notification-icon">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </a>
+
+                    <div class="header-profile">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Admin profile">
+                        <div>
+                            <h4>Alex Morgan</h4>
+                            <p>Administrator</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                </div>
+
+            </header>
+    <section class="page-intro"><div><span class="welcome-label">PREFERENCES</span><h1>Account Settings</h1><p>Update your account and dashboard preferences.</p></div></section>
+    <div class="settings-layout">
+      <section class="dashboard-card settings-card">
+        <div class="section-header"><div><h2>General Information</h2><p>Manage your basic account details</p></div></div>
+        <form>
+          <label class="field-label">Full Name</label><input class="settings-input" type="text" value="Alex Morgan">
+          <label class="field-label">Email Address</label><input class="settings-input" type="email" value="alex@example.com">
+          <label class="field-label">Company Name</label><input class="settings-input" type="text" value="DashBoard Inc.">
+          <label class="field-label">Time Zone</label><select class="settings-input"><option>Asia/Kolkata (IST)</option><option>Europe/London</option><option>America/New_York</option></select>
+          <button class="primary-button" type="button">Save Changes</button>
+        </form>
+      </section>
+      <section class="dashboard-card settings-card">
+        <div class="section-header"><div><h2>Notifications</h2><p>Choose what updates you receive</p></div></div>
+        <div class="setting-option"><div><strong>Email Notifications</strong><p>Receive updates by email</p></div><input type="checkbox" checked></div>
+        <div class="setting-option"><div><strong>New Order Alerts</strong><p>Get notified when an order is placed</p></div><input type="checkbox" checked></div>
+        <div class="setting-option"><div><strong>New User Alerts</strong><p>Get notified when a user registers</p></div><input type="checkbox"></div>
+        <div class="setting-option"><div><strong>Weekly Reports</strong><p>Receive a weekly performance summary</p></div><input type="checkbox" checked></div>
+      </section>
+      <section class="dashboard-card settings-card">
+        <div class="section-header"><div><h2>Security</h2><p>Keep your account secure</p></div></div>
+        <label class="field-label">Current Password</label><input class="settings-input" type="password" placeholder="Enter current password">
+        <label class="field-label">New Password</label><input class="settings-input" type="password" placeholder="Enter new password">
+        <label class="field-label">Confirm Password</label><input class="settings-input" type="password" placeholder="Confirm new password">
+        <button class="primary-button" type="button">Update Password</button>
+      </section>
+    </div>
+    <footer class="dashboard-footer">
+                <p>© 2026 DashBoard Admin Panel. All Rights Reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart"></i> for better management.</p>
+            </footer>
+  </main>
+</div>
+</body>
+</html>

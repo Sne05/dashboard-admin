@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics | DashBoard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><span class="logo-icon"><i class="fa-solid fa-chart-pie"></i></span> DashBoard</div>
+    <nav class="sidebar-menu">
+      <p class="menu-heading">MENU</p>
+      <a href="index.html" class="menu-link"><i class="fa-solid fa-house"></i> Dashboard</a>
+      <a href="users.html" class="menu-link"><i class="fa-solid fa-users"></i> Users</a>
+      <a href="orders.html" class="menu-link"><i class="fa-solid fa-cart-shopping"></i> Orders</a>
+      <a href="products.html" class="menu-link"><i class="fa-solid fa-box"></i> Products</a>
+      <a href="analytics.html" class="menu-link active"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+      <a href="messages.html" class="menu-link"><i class="fa-regular fa-envelope"></i> Messages</a>
+      <p class="menu-heading">PREFERENCES</p><a href="settings.html" class="menu-link"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><div class="help-icon"><i class="fa-regular fa-circle-question"></i></div><strong>Need Help?</strong><p>Contact our support team.</p><a href="support.html">Get Support</a></div>
+      <a href="login.html" class="menu-link logout-link"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </div>
+  </aside>
+  <main class="main-content">
+
+            <!-- DASHBOARD HEADER -->
+            <header class="top-header">
+
+                <div class="header-left">
+                    <div>
+                        <h1>Analytics</h1>
+                        <p>Welcome back! Here's what's happening today.</p>
+                    </div>
+                </div>
+
+                <div class="header-right">
+
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search anything...">
+                    </div>
+
+                    <a href="#" class="header-icon notification-icon">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </a>
+
+                    <div class="header-profile">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Admin profile">
+                        <div>
+                            <h4>Alex Morgan</h4>
+                            <p>Administrator</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                </div>
+
+            </header>
+    <section class="page-intro"><div><span class="welcome-label">REPORTS</span><h1>Analytics Overview</h1><p>Understand your business performance at a glance.</p></div><select class="table-select"><option>Last 30 Days</option><option>Last 7 Days</option><option>Last 12 Months</option></select></section>
+    <section class="stats-grid">
+      <div class="stat-card"><div class="stat-top"><span>Total Revenue</span><i class="fa-solid fa-dollar-sign stat-icon"></i></div><h2>$48,295</h2><p class="stat-change">+12.8% this month</p></div>
+      <div class="stat-card"><div class="stat-top"><span>Total Orders</span><i class="fa-solid fa-bag-shopping stat-icon"></i></div><h2>2,845</h2><p class="stat-change">+8.2% this month</p></div>
+      <div class="stat-card"><div class="stat-top"><span>New Customers</span><i class="fa-solid fa-user-plus stat-icon"></i></div><h2>1,204</h2><p class="stat-change">+15.4% this month</p></div>
+      <div class="stat-card"><div class="stat-top"><span>Conversion Rate</span><i class="fa-solid fa-chart-simple stat-icon"></i></div><h2>4.85%</h2><p class="stat-change">+2.1% this month</p></div>
+    </section>
+    <div class="bottom-grid">
+      <section class="dashboard-card">
+        <div class="section-header"><div><h2>Revenue Overview</h2><p>Monthly revenue performance</p></div></div>
+        <div class="analytics-chart">
+          <div class="chart-y-labels"><span>$50k</span><span>$40k</span><span>$30k</span><span>$20k</span><span>$10k</span></div>
+          <div class="chart-bars">
+            <div class="chart-column"><div class="chart-bar" style="height:45%"></div><small>Jan</small></div>
+            <div class="chart-column"><div class="chart-bar" style="height:60%"></div><small>Feb</small></div>
+            <div class="chart-column"><div class="chart-bar" style="height:52%"></div><small>Mar</small></div>
+            <div class="chart-column"><div class="chart-bar" style="height:75%"></div><small>Apr</small></div>
+            <div class="chart-column"><div class="chart-bar" style="height:65%"></div><small>May</small></div>
+            <div class="chart-column"><div class="chart-bar" style="height:90%"></div><small>Jun</small></div>
+          </div>
+        </div>
+      </section>
+      <section class="dashboard-card">
+        <div class="section-header"><div><h2>Sales by Category</h2><p>Product category breakdown</p></div></div>
+        <div class="category-breakdown">
+          <div><span><i class="category-dot dot-blue"></i> Electronics</span><strong>42%</strong></div>
+          <div class="progress-track"><span style="width:42%"></span></div>
+          <div><span><i class="category-dot dot-purple"></i> Fashion</span><strong>28%</strong></div>
+          <div class="progress-track"><span style="width:28%"></span></div>
+          <div><span><i class="category-dot dot-green"></i> Accessories</span><strong>18%</strong></div>
+          <div class="progress-track"><span style="width:18%"></span></div>
+          <div><span><i class="category-dot dot-orange"></i> Other</span><strong>12%</strong></div>
+          <div class="progress-track"><span style="width:12%"></span></div>
+        </div>
+      </section>
+    </div>
+    <section class="page-table-section">
+      <div class="section-header"><div><h2>Performance Summary</h2><p>Key business metrics</p></div></div>
+      <div class="table-container"><table class="management-table"><thead><tr><th>METRIC</th><th>THIS MONTH</th><th>LAST MONTH</th><th>GROWTH</th></tr></thead><tbody>
+        <tr><td>Revenue</td><td>$48,295</td><td>$42,810</td><td class="positive-text">+12.8%</td></tr>
+        <tr><td>Orders</td><td>2,845</td><td>2,629</td><td class="positive-text">+8.2%</td></tr>
+        <tr><td>Customers</td><td>1,204</td><td>1,043</td><td class="positive-text">+15.4%</td></tr>
+      </tbody></table></div>
+    </section>
+    <footer class="dashboard-footer">
+                <p>© 2026 DashBoard Admin Panel. All Rights Reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart"></i> for better management.</p>
+            </footer>
+  </main>
+</div>
+</body>
+</html>
+s

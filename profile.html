@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | DashBoard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><span class="logo-icon"><i class="fa-solid fa-chart-pie"></i></span> DashBoard</div>
+    <nav class="sidebar-menu">
+      <p class="menu-heading">MENU</p>
+      <a href="index.html" class="menu-link"><i class="fa-solid fa-house"></i> Dashboard</a>
+      <a href="users.html" class="menu-link"><i class="fa-solid fa-users"></i> Users</a>
+      <a href="orders.html" class="menu-link"><i class="fa-solid fa-cart-shopping"></i> Orders</a>
+      <a href="products.html" class="menu-link"><i class="fa-solid fa-box"></i> Products</a>
+      <a href="analytics.html" class="menu-link"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+      <a href="messages.html" class="menu-link"><i class="fa-regular fa-envelope"></i> Messages</a>
+      <p class="menu-heading">PREFERENCES</p><a href="settings.html" class="menu-link"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><div class="help-icon"><i class="fa-regular fa-circle-question"></i></div><strong>Need Help?</strong><p>Contact our support team.</p><a href="support.html">Get Support</a></div>
+      <a href="login.html" class="menu-link logout-link"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </div>
+  </aside>
+   <main class="main-content">
+
+            <!-- DASHBOARD HEADER -->
+            <header class="top-header">
+
+                <div class="header-left">
+                    <div>
+                        <h1>Profile</h1>
+                        <p>Welcome back! Here's what's happening today.</p>
+                    </div>
+                </div>
+
+                <div class="header-right">
+
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search anything...">
+                    </div>
+
+                    <a href="#" class="header-icon notification-icon">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </a>
+
+                    <div class="header-profile">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Admin profile">
+                        <div>
+                            <h4>Alex Morgan</h4>
+                            <p>Administrator</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                </div>
+
+            </header>
+    <section class="page-intro"><div><span class="welcome-label">ACCOUNT</span><h1>My Profile</h1><p>Manage your personal information and account details.</p></div></section>
+    <section class="dashboard-card profile-details-card">
+      <div class="profile-cover"></div>
+      <div class="profile-main">
+        <img class="large-avatar" src="https://i.pravatar.cc/100?img=47" alt="Alex Morgan">
+        <div><h2>Alex Morgan</h2><p>Administrator</p><span class="status status-completed">Active Account</span></div>
+        <button class="primary-button">Edit Profile</button>
+      </div>
+      <div class="profile-info-grid">
+        <div><small>Full Name</small><strong>Alex Morgan</strong></div>
+        <div><small>Email Address</small><strong>alex@example.com</strong></div>
+        <div><small>Phone Number</small><strong>+1 234 567 890</strong></div>
+        <div><small>Location</small><strong>New York, USA</strong></div>
+        <div><small>Role</small><strong>Administrator</strong></div>
+        <div><small>Member Since</small><strong>January 2024</strong></div>
+      </div>
+    </section>
+    <div class="bottom-grid">
+      <section class="dashboard-card"><div class="section-header"><div><h2>Account Activity</h2><p>Your recent account actions</p></div></div>
+        <ul class="profile-activity">
+          <li><i class="fa-solid fa-right-to-bracket"></i><div><strong>Successful login</strong><small>Today at 9:30 AM</small></div></li>
+          <li><i class="fa-solid fa-user-pen"></i><div><strong>Profile information updated</strong><small>Yesterday at 4:15 PM</small></div></li>
+          <li><i class="fa-solid fa-lock"></i><div><strong>Password changed</strong><small>October 28, 2026</small></div></li>
+        </ul>
+      </section>
+      <section class="dashboard-card"><div class="section-header"><div><h2>Quick Links</h2><p>Manage your account</p></div></div>
+        <div class="quick-links"><a href="settings.html"><i class="fa-solid fa-gear"></i> Account Settings <i class="fa-solid fa-chevron-right"></i></a><a href="activity.html"><i class="fa-solid fa-clock-rotate-left"></i> Activity History <i class="fa-solid fa-chevron-right"></i></a><a href="support.html"><i class="fa-regular fa-circle-question"></i> Get Support <i class="fa-solid fa-chevron-right"></i></a></div>
+      </section>
+    </div>
+    <footer class="dashboard-footer">
+                <p>© 2026 DashBoard Admin Panel. All Rights Reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart"></i> for better management.</p>
+            </footer>
+  </main>
+</div>
+</body>
+</html>

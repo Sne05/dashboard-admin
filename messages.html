@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages | DashBoard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><span class="logo-icon"><i class="fa-solid fa-chart-pie"></i></span> DashBoard</div>
+    <nav class="sidebar-menu">
+      <p class="menu-heading">MENU</p>
+      <a href="index.html" class="menu-link"><i class="fa-solid fa-house"></i> Dashboard</a>
+      <a href="users.html" class="menu-link"><i class="fa-solid fa-users"></i> Users</a>
+      <a href="orders.html" class="menu-link"><i class="fa-solid fa-cart-shopping"></i> Orders</a>
+      <a href="products.html" class="menu-link"><i class="fa-solid fa-box"></i> Products</a>
+      <a href="analytics.html" class="menu-link"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+      <a href="messages.html" class="menu-link active"><i class="fa-regular fa-envelope"></i> Messages</a>
+      <p class="menu-heading">PREFERENCES</p><a href="settings.html" class="menu-link"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><div class="help-icon"><i class="fa-regular fa-circle-question"></i></div><strong>Need Help?</strong><p>Contact our support team.</p><a href="support.html">Get Support</a></div>
+      <a href="login.html" class="menu-link logout-link"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </div>
+  </aside>
+   <main class="main-content">
+
+            <!-- DASHBOARD HEADER -->
+            <header class="top-header">
+
+                <div class="header-left">
+                    <div>
+                        <h1>Messages</h1>
+                        <p>Welcome back! Here's what's happening today.</p>
+                    </div>
+                </div>
+
+                <div class="header-right">
+
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search anything...">
+                    </div>
+
+                    <a href="#" class="header-icon notification-icon">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </a>
+
+                    <div class="header-profile">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Admin profile">
+                        <div>
+                            <h4>Alex Morgan</h4>
+                            <p>Administrator</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                </div>
+
+            </header>
+    <section class="page-intro"><div><span class="welcome-label">COMMUNICATION</span><h1>Messages</h1><p>Stay connected with your customers and team.</p></div><button class="primary-button"><i class="fa-solid fa-pen"></i> Compose Message</button></section>
+    <section class="stats-grid">
+      <div class="stat-card"><div class="stat-top"><span>Total Messages</span><i class="fa-regular fa-envelope stat-icon"></i></div><h2>248</h2><p class="stat-description">All conversations</p></div>
+      <div class="stat-card"><div class="stat-top"><span>Unread</span><i class="fa-solid fa-envelope-open-text stat-icon"></i></div><h2>18</h2><p class="stat-description">Awaiting response</p></div>
+      <div class="stat-card"><div class="stat-top"><span>Replied</span><i class="fa-solid fa-reply stat-icon"></i></div><h2>196</h2><p class="stat-description">Messages answered</p></div>
+      <div class="stat-card"><div class="stat-top"><span>Archived</span><i class="fa-solid fa-box-archive stat-icon"></i></div><h2>34</h2><p class="stat-description">Stored conversations</p></div>
+    </section>
+    <section class="page-table-section">
+      <div class="section-header"><div><h2>Recent Conversations</h2><p>Latest messages from your customers</p></div><button class="outline-button">View All</button></div>
+      <div class="message-list">
+        <div class="message-item"><img src="https://i.pravatar.cc/100?img=47" alt="Sarah"><div class="message-content"><div><strong>Sarah Johnson</strong><small>10:42 AM</small></div><p>Hello, I wanted to ask about my recent order...</p><span class="message-tag">Order Support</span></div><span class="unread-dot"></span></div>
+        <div class="message-item"><img src="https://i.pravatar.cc/100?img=13" alt="David"><div class="message-content"><div><strong>David Wilson</strong><small>Yesterday</small></div><p>Thank you for the quick delivery. Great service!</p><span class="message-tag">Feedback</span></div></div>
+        <div class="message-item"><img src="https://i.pravatar.cc/100?img=44" alt="Emily"><div class="message-content"><div><strong>Emily Davis</strong><small>Yesterday</small></div><p>Can you help me with the product return process?</p><span class="message-tag">Returns</span></div><span class="unread-dot"></span></div>
+        <div class="message-item"><img src="https://i.pravatar.cc/100?img=68" alt="Michael"><div class="message-content"><div><strong>Michael Brown</strong><small>Oct 30</small></div><p>I have a question about the available payment options.</p><span class="message-tag">Payment</span></div></div>
+      </div>
+    </section>
+    <footer class="dashboard-footer">
+                <p>© 2026 DashBoard Admin Panel. All Rights Reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart"></i> for better management.</p>
+            </footer>
+  </main>
+</div>
+</body>
+</html>

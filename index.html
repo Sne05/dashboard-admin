@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h2>Dash<span>Board</span></h2>
+            </div>
+
+            <div class="sidebar-menu">
+
+                <p class="menu-heading">MAIN MENU</p>
+
+                <a href="index.html" class="menu-link active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="users.html" class="menu-link">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Users</span>
+                </a>
+
+                <a href="orders.html" class="menu-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Orders</span>
+                </a>
+
+                <a href="products.html" class="menu-link">
+                    <i class="fa-solid fa-box"></i>
+                    <span>Products</span>
+                </a>
+
+                <a href="analytics.html" class="menu-link">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Analytics</span>
+                </a>
+
+                <p class="menu-heading second-heading">PREFERENCES</p>
+
+                <a href="messages.html" class="menu-link">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Messages</span>
+                    <span class="notification-count">4</span>
+                </a>
+
+                <a href="settings.html" class="menu-link">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </div>
+                    <h3>Need Help?</h3>
+                    <p>Contact our support team for assistance.</p>
+                    <a href="support.html">Get Support</a>
+                </div>
+
+                <a href="login.html" class="logout-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- DASHBOARD HEADER -->
+            <header class="top-header">
+
+                <div class="header-left">
+                    <div>
+                        <h1>Dashboard</h1>
+                        <p>Welcome back! Here's what's happening today.</p>
+                    </div>
+                </div>
+
+                <div class="header-right">
+
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search anything...">
+                    </div>
+
+                    <a href="#" class="header-icon notification-icon">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </a>
+
+                    <div class="header-profile">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Admin profile">
+                        <div>
+                            <h4>Alex Morgan</h4>
+                            <p>Administrator</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- WELCOME SECTION -->
+            <section class="welcome-section">
+
+                <div class="welcome-text">
+                    <span class="welcome-label">OVERVIEW</span>
+                    <h2>Good Morning, Alex! <span>👋</span></h2>
+                    <p>Here's a quick overview of your business performance.</p>
+                </div>
+
+                <div class="welcome-date">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>November 03, 2026</span>
+                </div>
+
+            </section>
+
+
+            <!-- STATISTICS CARDS -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon blue">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <span class="stat-change positive">
+                            <i class="fa-solid fa-arrow-up"></i> 12.5%
+                        </span>
+                    </div>
+
+                    <p>Total Users</p>
+                    <h2>24,560</h2>
+                    <span class="stat-description">Compared to last month</span>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon purple">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <span class="stat-change positive">
+                            <i class="fa-solid fa-arrow-up"></i> 8.2%
+                        </span>
+                    </div>
+
+                    <p>Total Orders</p>
+                    <h2>8,549</h2>
+                    <span class="stat-description">Compared to last month</span>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon green">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <span class="stat-change positive">
+                            <i class="fa-solid fa-arrow-up"></i> 15.8%
+                        </span>
+                    </div>
+
+                    <p>Total Revenue</p>
+                    <h2>$45,250</h2>
+                    <span class="stat-description">Compared to last month</span>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon orange">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <span class="stat-change negative">
+                            <i class="fa-solid fa-arrow-down"></i> 2.4%
+                        </span>
+                    </div>
+
+                    <p>Pending Orders</p>
+                    <h2>125</h2>
+                    <span class="stat-description">Compared to last month</span>
+                </div>
+
+            </section>
+
+
+            <!-- RECENT ORDERS -->
+            <section class="orders-section">
+
+                <div class="section-header">
+                    <div>
+                        <h2>Recent Orders</h2>
+                        <p>Latest customer orders and their status.</p>
+                    </div>
+
+                    <a href="orders.html" class="view-all">
+                        View All <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="table-container">
+
+                    <table class="orders-table">
+
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>#ORD-1024</td>
+                                <td>
+                                    <div class="customer-cell">
+                                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                                        <span>Olivia Martin</span>
+                                    </div>
+                                </td>
+                                <td>Wireless Headphones</td>
+                                <td>Nov 03, 2026</td>
+                                <td>$120.00</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#ORD-1023</td>
+                                <td>
+                                    <div class="customer-cell">
+                                        <img src="https://i.pravatar.cc/100?img=11" alt="">
+                                        <span>James Wilson</span>
+                                    </div>
+                                </td>
+                                <td>Smart Watch</td>
+                                <td>Nov 02, 2026</td>
+                                <td>$250.00</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#ORD-1022</td>
+                                <td>
+                                    <div class="customer-cell">
+                                        <img src="https://i.pravatar.cc/100?img=32" alt="">
+                                        <span>Sophia Anderson</span>
+                                    </div>
+                                </td>
+                                <td>Bluetooth Speaker</td>
+                                <td>Nov 02, 2026</td>
+                                <td>$85.00</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#ORD-1021</td>
+                                <td>
+                                    <div class="customer-cell">
+                                        <img src="https://i.pravatar.cc/100?img=5" alt="">
+                                        <span>William Brown</span>
+                                    </div>
+                                </td>
+                                <td>Gaming Keyboard</td>
+                                <td>Nov 01, 2026</td>
+                                <td>$150.00</td>
+                                <td><span class="status cancelled">Cancelled</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#ORD-1020</td>
+                                <td>
+                                    <div class="customer-cell">
+                                        <img src="https://i.pravatar.cc/100?img=44" alt="">
+                                        <span>Emma Davis</span>
+                                    </div>
+                                </td>
+                                <td>Wireless Mouse</td>
+                                <td>Oct 31, 2026</td>
+                                <td>$45.00</td>
+                                <td><span class="status processing">Processing</span></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- BOTTOM DASHBOARD GRID -->
+            <section class="bottom-grid">
+
+
+                <!-- USER INFORMATION -->
+                <div class="dashboard-card user-card">
+
+                    <div class="section-header">
+                        <div>
+                            <h2>Top Users</h2>
+                            <p>Your most active customers.</p>
+                        </div>
+
+                        <a href="users.html" class="small-link">View All</a>
+                    </div>
+
+                    <div class="user-list">
+
+                        <div class="user-item">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="">
+                            <div class="user-details">
+                                <h4>Olivia Martin</h4>
+                                <p>olivia@example.com</p>
+                            </div>
+                            <span class="user-orders">32 Orders</span>
+                        </div>
+
+                        <div class="user-item">
+                            <img src="https://i.pravatar.cc/100?img=11" alt="">
+                            <div class="user-details">
+                                <h4>James Wilson</h4>
+                                <p>james@example.com</p>
+                            </div>
+                            <span class="user-orders">28 Orders</span>
+                        </div>
+
+                        <div class="user-item">
+                            <img src="https://i.pravatar.cc/100?img=32" alt="">
+                            <div class="user-details">
+                                <h4>Sophia Anderson</h4>
+                                <p>sophia@example.com</p>
+                            </div>
+                            <span class="user-orders">24 Orders</span>
+                        </div>
+
+                        <div class="user-item">
+                            <img src="https://i.pravatar.cc/100?img=5" alt="">
+                            <div class="user-details">
+                                <h4>William Brown</h4>
+                                <p>william@example.com</p>
+                            </div>
+                            <span class="user-orders">19 Orders</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIVITY SECTION -->
+                <div class="dashboard-card activity-card">
+
+                    <div class="section-header">
+                        <div>
+                            <h2>Recent Activity</h2>
+                            <p>Latest updates and notifications.</p>
+                        </div>
+
+                        <a href="activity.html" class="small-link">View All</a>
+                    </div>
+
+                    <div class="activity-list">
+
+                        <div class="activity-item">
+                            <div class="activity-icon activity-blue">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>New user registered</h4>
+                                <p>Olivia Martin joined the platform.</p>
+                                <span>10 minutes ago</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon activity-green">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>New order received</h4>
+                                <p>Order #ORD-1024 was placed.</p>
+                                <span>30 minutes ago</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon activity-purple">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Payment received</h4>
+                                <p>Payment of $250 was successful.</p>
+                                <span>1 hour ago</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon activity-orange">
+                                <i class="fa-solid fa-box"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Product updated</h4>
+                                <p>Wireless headphones updated.</p>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROFILE SECTION -->
+                <div class="dashboard-card profile-card">
+
+                    <div class="section-header">
+                        <div>
+                            <h2>Admin Profile</h2>
+                            <p>Your account information.</p>
+                        </div>
+
+                        <a href="profile.html" class="small-link">Edit</a>
+                    </div>
+
+                    <div class="profile-info">
+
+                        <img src="https://i.pravatar.cc/150?img=47" alt="Alex Morgan">
+
+                        <h3>Alex Morgan</h3>
+                        <p>Administrator</p>
+
+                        <div class="profile-details">
+                            <div>
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>alex@example.com</span>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+1 234 567 890</span>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>New York, USA</span>
+                            </div>
+                        </div>
+
+                        <a href="profile.html" class="profile-button">
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer class="dashboard-footer">
+                <p>© 2026 DashBoard Admin Panel. All Rights Reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart"></i> for better management.</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

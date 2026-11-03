@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h2>Dash<span>Board</span></h2>
+        </div>
+
+        <div class="sidebar-menu">
+
+            <p class="menu-heading">MAIN MENU</p>
+
+            <a href="index.html" class="menu-link">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="users.html" class="menu-link">
+                <i class="fa-solid fa-users"></i>
+                <span>Users</span>
+            </a>
+
+            <a href="orders.html" class="menu-link active">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Orders</span>
+            </a>
+
+            <a href="products.html" class="menu-link">
+                <i class="fa-solid fa-box"></i>
+                <span>Products</span>
+            </a>
+
+            <a href="analytics.html" class="menu-link">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+
+            <p class="menu-heading second-heading">PREFERENCES</p>
+
+            <a href="messages.html" class="menu-link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Messages</span>
+                <span class="notification-count">4</span>
+            </a>
+
+            <a href="settings.html" class="menu-link">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-bottom">
+
+            <div class="help-card">
+                <div class="help-icon">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <h3>Need Help?</h3>
+                <p>Contact our support team for assistance.</p>
+                <a href="support.html">Get Support</a>
+            </div>
+
+            <a href="login.html" class="logout-link">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="top-header">
+
+            <div class="header-left">
+                <div>
+                    <h1>Orders</h1>
+                    <p>Track and manage all customer orders.</p>
+                </div>
+            </div>
+
+            <div class="header-right">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search anything...">
+                </div>
+
+                <a href="#" class="header-icon notification-icon">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </a>
+
+                <div class="header-profile">
+                    <img src="https://i.pravatar.cc/100?img=47" alt="Admin profile">
+                    <div>
+                        <h4>Alex Morgan</h4>
+                        <p>Administrator</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE INTRO -->
+        <section class="page-intro">
+            <div>
+                <span class="welcome-label">ORDER MANAGEMENT</span>
+                <h2>All Orders</h2>
+                <p>Manage orders, monitor payments and track deliveries.</p>
+            </div>
+
+            <a href="#" class="primary-button">
+                <i class="fa-solid fa-plus"></i>
+                Create Order
+            </a>
+        </section>
+
+
+        <!-- ORDER STATISTICS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon blue">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <span class="stat-change positive">+12.5%</span>
+                </div>
+                <p>Total Orders</p>
+                <h2>8,549</h2>
+                <span class="stat-description">Compared to last month</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon green">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <span class="stat-change positive">+8.2%</span>
+                </div>
+                <p>Completed Orders</p>
+                <h2>6,850</h2>
+                <span class="stat-description">Successfully delivered</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon orange">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <span class="stat-change negative">-2.4%</span>
+                </div>
+                <p>Pending Orders</p>
+                <h2>1,250</h2>
+                <span class="stat-description">Waiting for processing</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon purple">
+                        <i class="fa-solid fa-ban"></i>
+                    </div>
+                    <span class="stat-change negative">-1.5%</span>
+                </div>
+                <p>Cancelled Orders</p>
+                <h2>449</h2>
+                <span class="stat-description">Cancelled this month</span>
+            </div>
+
+        </section>
+
+
+        <!-- ORDERS TABLE -->
+        <section class="page-table-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>Recent Orders</h2>
+                    <p>View and manage all customer orders.</p>
+                </div>
+
+                <button class="outline-button">
+                    <i class="fa-solid fa-download"></i>
+                    Export
+                </button>
+            </div>
+
+
+            <!-- TABLE TOOLBAR -->
+            <div class="table-toolbar">
+
+                <div class="table-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search order ID or customer...">
+                </div>
+
+                <select class="table-select">
+                    <option>All Status</option>
+                    <option>Completed</option>
+                    <option>Pending</option>
+                    <option>Processing</option>
+                    <option>Cancelled</option>
+                </select>
+
+                <select class="table-select">
+                    <option>All Dates</option>
+                    <option>Today</option>
+                    <option>This Week</option>
+                    <option>This Month</option>
+                </select>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table class="management-table">
+
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>#ORD-1024</td>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=12" alt="">
+                                    <div>
+                                        <strong>Olivia Martin</strong>
+                                        <small>olivia@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Wireless Headphones</td>
+                            <td>Nov 03, 2026</td>
+                            <td>$120.00</td>
+                            <td><span class="payment-paid">Paid</span></td>
+                            <td><span class="status completed">Completed</span></td>
+                            <td><a href="#" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#ORD-1023</td>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=11" alt="">
+                                    <div>
+                                        <strong>James Wilson</strong>
+                                        <small>james@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Smart Watch</td>
+                            <td>Nov 02, 2026</td>
+                            <td>$250.00</td>
+                            <td><span class="payment-pending">Pending</span></td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td><a href="#" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#ORD-1022</td>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=32" alt="">
+                                    <div>
+                                        <strong>Sophia Anderson</strong>
+                                        <small>sophia@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Bluetooth Speaker</td>
+                            <td>Nov 02, 2026</td>
+                            <td>$85.00</td>
+                            <td><span class="payment-paid">Paid</span></td>
+                            <td><span class="status completed">Completed</span></td>
+                            <td><a href="#" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#ORD-1021</td>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=5" alt="">
+                                    <div>
+                                        <strong>William Brown</strong>
+                                        <small>william@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Gaming Keyboard</td>
+                            <td>Nov 01, 2026</td>
+                            <td>$150.00</td>
+                            <td><span class="payment-failed">Failed</span></td>
+                            <td><span class="status cancelled">Cancelled</span></td>
+                            <td><a href="#" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#ORD-1020</td>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=44" alt="">
+                                    <div>
+                                        <strong>Emma Davis</strong>
+                                        <small>emma@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Wireless Mouse</td>
+                            <td>Oct 31, 2026</td>
+                            <td>$45.00</td>
+                            <td><span class="payment-paid">Paid</span></td>
+                            <td><span class="status processing">Processing</span></td>
+                            <td><a href="#" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#ORD-1019</td>
+                            <td>
+                                <div class="customer-cell">
+                                    <img src="https://i.pravatar.cc/100?img=60" alt="">
+                                    <div>
+                                        <strong>Noah Taylor</strong>
+                                        <small>noah@example.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Gaming Mouse</td>
+                            <td>Oct 30, 2026</td>
+                            <td>$75.00</td>
+                            <td><span class="payment-paid">Paid</span></td>
+                            <td><span class="status completed">Completed</span></td>
+                            <td><a href="#" class="action-link"><i class="fa-solid fa-eye"></i></a></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+
+                <p>Showing 1–6 of 8,549 orders</p>
+
+                <div class="pagination-buttons">
+                    <button disabled><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="page-active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="dashboard-footer">
+            <p>© 2026 DashBoard Admin Panel. All Rights Reserved.</p>
+            <p>Designed with <i class="fa-solid fa-heart"></i> for better management.</p>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>

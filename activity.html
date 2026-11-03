@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity | DashBoard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><span class="logo-icon"><i class="fa-solid fa-chart-pie"></i></span> DashBoard</div>
+    <nav class="sidebar-menu">
+      <p class="menu-heading">MENU</p>
+      <a href="index.html" class="menu-link"><i class="fa-solid fa-house"></i> Dashboard</a>
+      <a href="users.html" class="menu-link"><i class="fa-solid fa-users"></i> Users</a>
+      <a href="orders.html" class="menu-link"><i class="fa-solid fa-cart-shopping"></i> Orders</a>
+      <a href="products.html" class="menu-link"><i class="fa-solid fa-box"></i> Products</a>
+      <a href="analytics.html" class="menu-link"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+      <a href="messages.html" class="menu-link"><i class="fa-regular fa-envelope"></i> Messages</a>
+      <p class="menu-heading">PREFERENCES</p><a href="settings.html" class="menu-link"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><div class="help-icon"><i class="fa-regular fa-circle-question"></i></div><strong>Need Help?</strong><p>Contact our support team.</p><a href="support.html">Get Support</a></div>
+      <a href="login.html" class="menu-link logout-link"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </div>
+  </aside>
+  <main class="main-content">
+    <header class="top-header">
+      <div class="header-left"><h2>Activity</h2><p>Review recent dashboard activity</p></div>
+      <div class="header-right"><div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search..."></div><button class="header-icon"><i class="fa-regular fa-bell"></i><span class="notification-dot"></span></button><div class="header-profile"><img src="https://i.pravatar.cc/100?img=12" alt="Admin"><div><strong>Alex Morgan</strong><small>Administrator</small></div></div></div>
+    </header>
+    <section class="page-intro"><div><span class="welcome-label">HISTORY</span><h1>Recent Activity</h1><p>Keep track of important events and actions.</p></div><button class="outline-button"><i class="fa-solid fa-download"></i> Export History</button></section>
+    <section class="stats-grid">
+      <div class="stat-card"><div class="stat-top"><span>Total Activities</span><i class="fa-solid fa-list-check stat-icon"></i></div><h2>1,482</h2><p class="stat-description">All recorded events</p></div>
+      <div class="stat-card"><div class="stat-top"><span>Today</span><i class="fa-regular fa-calendar-check stat-icon"></i></div><h2>28</h2><p class="stat-description">Events recorded today</p></div>
+      <div class="stat-card"><div class="stat-top"><span>Logins</span><i class="fa-solid fa-right-to-bracket stat-icon"></i></div><h2>16</h2><p class="stat-description">Recent login events</p></div>
+      <div class="stat-card"><div class="stat-top"><span>Updates</span><i class="fa-solid fa-pen-to-square stat-icon"></i></div><h2>12</h2><p class="stat-description">Changes made today</p></div>
+    </section>
+    <section class="page-table-section">
+      <div class="section-header"><div><h2>Activity Log</h2><p>A record of recent actions across your dashboard</p></div></div>
+      <div class="table-toolbar">
+        <div class="table-search"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search activity..."></div>
+        <select class="table-select"><option>All Activities</option><option>Login</option><option>Orders</option><option>Updates</option></select>
+        <select class="table-select"><option>All Users</option><option>Alex Morgan</option><option>Sarah Johnson</option></select>
+      </div>
+      <div class="table-container"><table class="management-table">
+        <thead><tr><th>ACTIVITY</th><th>USER</th><th>DATE</th><th>TIME</th><th>STATUS</th></tr></thead>
+        <tbody>
+          <tr><td><i class="fa-solid fa-right-to-bracket activity-table-icon"></i> Logged into dashboard</td><td>Alex Morgan</td><td>Nov 03, 2026</td><td>09:30 AM</td><td><span class="status status-completed">Success</span></td></tr>
+          <tr><td><i class="fa-solid fa-cart-plus activity-table-icon"></i> Created a new order</td><td>Alex Morgan</td><td>Nov 03, 2026</td><td>09:12 AM</td><td><span class="status status-completed">Success</span></td></tr>
+          <tr><td><i class="fa-solid fa-user-plus activity-table-icon"></i> Added a new user</td><td>Sarah Johnson</td><td>Nov 02, 2026</td><td>04:45 PM</td><td><span class="status status-completed">Success</span></td></tr>
+          <tr><td><i class="fa-solid fa-box activity-table-icon"></i> Updated product details</td><td>Alex Morgan</td><td>Nov 02, 2026</td><td>02:20 PM</td><td><span class="status status-completed">Success</span></td></tr>
+          <tr><td><i class="fa-solid fa-gear activity-table-icon"></i> Changed account settings</td><td>Alex Morgan</td><td>Nov 01, 2026</td><td>11:05 AM</td><td><span class="status status-completed">Success</span></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+    <footer class="dashboard-footer">
+                <p>© 2026 DashBoard Admin Panel. All Rights Reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart"></i> for better management.</p>
+            </footer>
+  </main>
+</div>
+</body>
+</html>
